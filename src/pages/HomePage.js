@@ -14,6 +14,21 @@ window.HomePage = function HomePage({ onNavigate, onSelectProject }) {
       {/* Hero Section */}
       <section className="hero-section">
         <div className="container hero-grid">
+          {/* Left Hero Visual */}
+          <div className="hero-visual" aria-hidden="true">
+            <div className="portrait-card">
+              <div className="portrait-ring"></div>
+              <div className="portrait-amber-circle"></div>
+              <div className="portrait-avatar">
+                <span>{personal.initials}</span>
+              </div>
+              <div className="portrait-card-footer">
+                <span>{personal.name}</span>
+                <span>{personal.location}</span>
+              </div>
+            </div>
+          </div>
+
           <div className="hero-copy">
             <span className="eyebrow-badge">
               <span className="status-dot" aria-hidden="true"></span>
@@ -51,21 +66,6 @@ window.HomePage = function HomePage({ onNavigate, onSelectProject }) {
               >
                 More about me <span aria-hidden="true">↗</span>
               </a>
-            </div>
-          </div>
-
-          {/* Right Hero Visual */}
-          <div className="hero-visual" aria-hidden="true">
-            <div className="portrait-card">
-              <div className="portrait-ring"></div>
-              <div className="portrait-amber-circle"></div>
-              <div className="portrait-avatar">
-                <span>{personal.initials}</span>
-              </div>
-              <div className="portrait-card-footer">
-                <span>{personal.name}</span>
-                <span>{personal.location}</span>
-              </div>
             </div>
           </div>
         </div>
