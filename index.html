@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+
+    <!-- Google Fonts: JetBrains Mono (headings) & Inter (body/UI) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Relative path for GitHub Pages compatibility -->
+    <link rel="stylesheet" href="./styles/main.css" />
+  </head>
+  <body>
+    <!-- React mounts into this root element -->
+    <div id="root"></div>
+
+    <!-- React 18 & ReactDOM 18 via CDN (zero-build setup) -->
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+    ></script>
+
+    <!-- Babel Standalone compiles JSX directly in the browser -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <!-- Data -->
+    <script type="text/babel" src="./src/data/portfolioData.js"></script>
+
+    <!-- Shared Components -->
+    <script type="text/babel" src="./src/components/Navbar.js"></script>
+    <script type="text/babel" src="./src/components/ProjectCard.js"></script>
+    <script type="text/babel" src="./src/components/ProjectModal.js"></script>
+    <script type="text/babel" src="./src/components/Footer.js"></script>
+
+    <!-- Pages -->
+    <script type="text/babel" src="./src/pages/HomePage.js"></script>
+    <script type="text/babel" src="./src/pages/AboutPage.js"></script>
+    <script type="text/babel" src="./src/pages/PortfolioPage.js"></script>
+    <script type="text/babel" src="./src/pages/ContactPage.js"></script>
+
+    <!-- Root App -->
+    <script type="text/babel" src="./src/App.js"></script>
+  </body>
+</html>
